@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛР2</title>
+
+  <style>
+    header {
+      background: #222;
+      color: #fff;
+      padding: 12px 16px;
+    }
+    header a { color: #9fe870; text-decoration: none; margin-right: 12px; }
+    header a:hover { text-decoration: underline; }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#selectors">Селектори</a>
+      <a href="#position">Позиція</a>
+      <a href="#float">Зображення</a>
+      <a href="#variant">Варіант</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="color:#2b6cb0; margin-top:16px;">
+      Танчік Т-64БВ
+    </h1>
+
+    <section id="selectors">
+      <h2>ТТХ танку</h2>
+
+      <p>
+        Озброєння та бронювання:
+      </p>
+
+      <p class="note">
+        Озброєння: 125-мм гладкоствольна гармата 2А46М-1. Кулемет НСВТ калібру 12,7 мм + спарений 7,62.
+      </p>
+
+      <p id="important">
+        	Бронювання: комбінована, багатошарова. Товщина мм/град: Лоб: верх: 100+105 (СТБ) +20/68°, низ: 80/61°30' Борт: 80 Динамічний захист: Контакт-1 
+      </p>
+
+      <p>
+        Двигун: 5ТДФ
+        (<code>input[type=checkbox]:checked + label</code>).
+      </p>
+    </section>
+
+    <section id="position">
+      <h2>Кількість танків в ЗСУ</h2>
+
+      <div class="pos-demo">
+        понад 250 танків Т-64БВ і Т-64БМ
+        <span class="badge-abs">ABS</span>
+      </div>
+
+      <a class="help-fixed" href="#variant" title="Перейти до завдання за варіантом">?</a>
+    </section>
+
+    <section id="float">
+      <h2>Т-64БВ в бойових діях</h2>
+
+      <img class="float-left" src="https://foreignukraines.com/wp-content/uploads/2024/07/t-64bv_tank_kyiv_2018_29.jpg?w=1440" alt="t64bv">
+      <p>
+        Т-64БВ є одним із основних бойових танків, що активно використовується в бойових умовах, особливо збройними силами України. Його ефективність у боях залежить від модернізації, умов експлуатації та рівня підготовки екіпажу, а також від протидії сучасним протитанковим засобам противника. 
+Роль у ЗСУ: Т-64БВ залишається основним бойовим танком Збройних сил України. Він активно залучається до бойових дій як наступальної, так і оборонної операцій.
+      </p>
+      <p class="clearfix">
+       Зображення бойової машини на марші
+      </p>
+    </section>
+
+    <section id="variant">
+      <h2>Завдання за варіантом</h2>
+
+      <h3>1) Checkbox з оформленням, що залежить від стану</h3>
+      <div class="checkgroup">
+        <div class="check">
+          <input type="checkbox" id="cb1">
+          <label for="cb1">Опція 1</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="cb2">
+          <label for="cb2">Опція 2</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="cb3">
+          <label for="cb3">Опція 3</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="cb4" disabled>
+          <label for="cb4">Заблокована</label>
+        </div>
+      </div>
+
+      <h3>2) Flexbox-контейнер</h3>
+      <div class="flex-demo">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+        <div>5</div><div>6</div><div>7</div><div>8</div>
+        <div>9</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

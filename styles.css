@@ -1,0 +1,144 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #faf3d1; /* як у скріні — теплий фон */
+  color: #222;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+
+p {              
+  line-height: 1.55;
+  margin: 10px 0;
+}
+
+.note {          
+  background: #eef6ff;
+  border-left: 4px solid #3b82f6;
+  padding: 8px 10px;
+}
+
+#important {      
+  background: #fff3cd;
+  border: 1px solid #ffec99;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+.pos-demo {
+  position: relative;           
+  background: #f7f7f7;
+  border: 1px dashed #bbb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.badge-abs {
+  position: absolute;           
+  right: 8px;
+  top: -10px;
+  background: #10b981;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+.help-fixed {                   
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  background: #111; color: #fff; text-decoration: none;
+  border-radius: 50%;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.float-left {
+  float: left;
+  width: 700px;
+  margin: 0 12px 8px 0;
+  border-radius: 6px;
+}
+.clearfix { clear: both; }
+
+.checkgroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 8px 0 16px;
+}
+
+.check input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.check label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  transition: .2s ease;
+  user-select: none;
+}
+
+.check label:hover,
+.check input[type="checkbox"]:focus + label {
+  box-shadow: 0 0 0 3px rgba(59,130,246,.25);
+}
+
+.check input[type="checkbox"]:checked + label {
+  background: #fac800;        
+  border-color: #f59e0b;
+}
+
+.check input[type="checkbox"]:disabled + label {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.flex-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;                    
+  padding: 14px;
+  background: #ffffff;
+  border: 3px solid #ffc822;    
+  border-radius: 6px;
+}
+
+.flex-demo > div {
+  flex: 0 0 100px;              
+  height: 80px;
+  display: grid;
+  place-items: start;
+  padding: 6px;
+  font-weight: 700;
+  border-radius: 4px;
+  background: #f2c200;         
+  color: #000000;
+}
+
+.flex-demo > div:nth-child(1) {
+  background: #00d540;          
+  color: #000000;
+}
+
+.flex-demo > div:nth-child(9) {
+  flex-basis: 100%;
+  height: 120px;
+  background: #00d540;
+  color: #0b2c12;
+}
